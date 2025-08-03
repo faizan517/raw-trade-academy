@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				trading: {
+					purple: 'hsl(var(--trading-purple))',
+					'purple-dark': 'hsl(var(--trading-purple-dark))',
+					'purple-light': 'hsl(var(--trading-purple-light))',
+					green: 'hsl(var(--trading-green))',
+					red: 'hsl(var(--trading-red))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

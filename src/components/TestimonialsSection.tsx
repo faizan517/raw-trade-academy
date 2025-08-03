@@ -4,15 +4,15 @@ import { Star } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Amit",
-      role: "Beginner Trader",
-      content: "RAW TRADE gave me the tools to finally trade with confidence. The live sessions are gold!",
+      name: "Ali Raza",
+      role: "Student",
+      content: "RAW TRADE helped me understand trading the right way. The Urdu explanations made everything easy, and the mentorship boosted my confidence.",
       rating: 5
     },
     {
-      name: "Sara", 
+      name: "Ahmed",
       role: "Intermediate Trader",
-      content: "No-nonsense approach. The best investment I've made in myself.",
+      content: "RAW TRADE's course is practical and uses local market examples. The step-by-step guidance and real mentorship gave me full confidence in my trading strategy.",
       rating: 5
     }
   ];

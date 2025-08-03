@@ -21,13 +21,12 @@ const HeroSection = () => {
         {/* Logo */}
         <div className="mb-8">
           <div className="inline-flex items-center gap-3 mb-4">
-            <div className="flex items-end gap-1">
-              <div className="w-3 h-6 bg-primary rounded-sm animate-pulse"></div>
-              <div className="w-3 h-8 bg-primary rounded-sm animate-pulse delay-100"></div>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground">
-              RAW TRADE
-            </h1>
+            <img 
+              src="/raw-trade-logo.png" 
+              alt="RAW TRADE Logo" 
+              className="h-32 md:h-48 w-auto mx-auto mb-0 block"
+              style={{ objectFit: "contain" }}
+            />
           </div>
           <p className="text-lg text-muted-foreground mb-12">
             Master the Markets. Trade with Confidence.

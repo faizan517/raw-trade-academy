@@ -27,6 +27,11 @@ const AboutSection = () => {
       icon: Users,
       title: "Live Market Sessions",
       description: "Real-time trading with expert guidance and analysis"
+    },
+    {
+      icon: Brain,
+      title: "Portfolio Building",
+      description: "Learn how to construct and manage a diversified investment portfolio"
     }
   ];
 

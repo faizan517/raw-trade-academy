@@ -6,7 +6,8 @@ const WhyChooseSection = () => {
     "Learn from Experienced Traders",
     "Practical, Step-by-Step Modules", 
     "Weekly Live Q&A",
-    "Lifetime Access & Community Support"
+    "Lifetime Access & Community Support",
+    "Personalized Mentorship & Guidance"
   ];
 
   return (

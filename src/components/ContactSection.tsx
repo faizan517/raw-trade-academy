@@ -10,20 +10,20 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "info@rawtrade.com",
-      href: "mailto:info@rawtrade.com"
+      value: "info@rawtrade.live",
+      href: "mailto:info@rawtrade.live"
     },
     {
       icon: Phone,
       label: "Phone", 
-      value: "+91-XXXXXXXXXX",
-      href: "tel:+91XXXXXXXXXX"
+      value: "+92-3390104714",
+      href: "tel:+923390104714"
     },
     {
       icon: Instagram,
       label: "Instagram",
-      value: "@rawtrade_official",
-      href: "https://instagram.com/rawtrade_official"
+      value: "@rawtrade.live",
+      href: "https://instagram.com/rawtrade.live"
     }
   ];
 
@@ -62,8 +62,7 @@ const ContactSection = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Contact Form */}
+        <div className="max-w-2xl mx-auto">
           <Card className="bg-card border-border">
             <CardHeader>
               <CardTitle className="text-2xl text-card-foreground text-center">
@@ -108,29 +107,6 @@ const ContactSection = () => {
               <Button variant="cta" className="w-full hover-scale">
                 Send Message
               </Button>
-            </CardContent>
-          </Card>
-
-          {/* CTA Card */}
-          <Card className="bg-card border-border flex flex-col justify-center">
-            <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-bold text-card-foreground mb-4">
-                Ready to Start Your Trading Journey?
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Join RAW TRADE and take control of your financial future.
-              </p>
-              <Button 
-                variant="hero" 
-                size="lg"
-                className="hover-scale"
-                onClick={() => window.open('https://wa.me/919999999999?text=Hello! I want to enroll in RAW TRADE course.', '_blank')}
-              >
-                Enroll Now
-              </Button>
-              <p className="text-sm text-muted-foreground mt-4">
-                🔐 Trusted by Hundreds of Traders
-              </p>
             </CardContent>
           </Card>
         </div>

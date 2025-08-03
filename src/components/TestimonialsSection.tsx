@@ -20,13 +20,13 @@ const TestimonialsSection = () => {
   return (
     <section className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12 text-center animate-fade-in">
           Student <span className="text-primary">Testimonials</span>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-card border-border hover:shadow-xl transition-all duration-300">
+            <Card key={index} className="bg-card border-border hover:shadow-xl transition-all duration-300 hover-scale animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
               <CardContent className="p-8">
                 {/* Rating stars */}
                 <div className="flex gap-1 mb-4">
@@ -42,7 +42,7 @@ const TestimonialsSection = () => {
                 
                 {/* Author */}
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover-scale">
                     <span className="text-primary font-semibold">
                       {testimonial.name.charAt(0)}
                     </span>

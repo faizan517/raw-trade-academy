@@ -12,15 +12,15 @@ const WhyChooseSection = () => {
   return (
     <section className="py-20 px-6 bg-secondary/50">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
           Why Choose <span className="text-primary">RAW TRADE</span>?
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
           {benefits.map((benefit, index) => (
-            <div key={index} className="flex items-center gap-4 p-6 rounded-lg bg-card hover:bg-card/80 transition-colors">
+            <div key={index} className="flex items-center gap-4 p-6 rounded-lg bg-card hover:bg-card/80 transition-colors hover-scale animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="flex-shrink-0">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center hover-scale">
                   <Check className="w-5 h-5 text-primary-foreground" />
                 </div>
               </div>

@@ -17,13 +17,13 @@ const HeroSection = () => {
         <div className="absolute top-44 right-26 w-2 h-8 bg-primary/25 rounded-sm animate-pulse delay-200"></div>
       </div>
 
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-6 animate-fade-in">
         {/* Logo */}
         <div className="mb-8">
           <div className="inline-flex items-center gap-3 mb-4">
             <div className="flex items-end gap-1">
-              <div className="w-3 h-6 bg-primary rounded-sm"></div>
-              <div className="w-3 h-8 bg-primary rounded-sm"></div>
+              <div className="w-3 h-6 bg-primary rounded-sm animate-pulse"></div>
+              <div className="w-3 h-8 bg-primary rounded-sm animate-pulse delay-100"></div>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-foreground">
               RAW TRADE
@@ -47,7 +47,12 @@ const HeroSection = () => {
         </p>
 
         {/* CTA Button */}
-        <Button variant="hero" size="lg" className="shadow-2xl">
+        <Button 
+          variant="hero" 
+          size="lg" 
+          className="shadow-2xl hover-scale animate-fade-in"
+          onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+        >
           Enroll Now
         </Button>
 

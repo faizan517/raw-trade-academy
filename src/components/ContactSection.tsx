@@ -28,12 +28,12 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-secondary/30">
+    <section id="contact" className="py-20 px-6 bg-secondary/30">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">
           Contact <span className="text-primary">Us</span>
         </h2>
-        <p className="text-xl text-muted-foreground mb-12">
+        <p className="text-xl text-muted-foreground mb-12 animate-fade-in">
           Have questions before enrolling? Reach out:
         </p>
         
@@ -41,9 +41,9 @@ const ContactSection = () => {
           {contactMethods.map((method, index) => {
             const IconComponent = method.icon;
             return (
-              <Card key={index} className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105">
+              <Card key={index} className="bg-card border-border hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardHeader className="pb-3">
-                  <div className="mx-auto w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
+                  <div className="mx-auto w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2 hover-scale">
                     <IconComponent className="w-6 h-6 text-primary" />
                   </div>
                   <CardTitle className="text-lg text-card-foreground">{method.label}</CardTitle>
@@ -51,7 +51,7 @@ const ContactSection = () => {
                 <CardContent>
                   <a 
                     href={method.href}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-primary transition-colors story-link"
                   >
                     {method.value}
                   </a>
@@ -105,7 +105,7 @@ const ContactSection = () => {
                   className="bg-secondary border-border text-foreground min-h-[100px]"
                 />
               </div>
-              <Button variant="cta" className="w-full">
+              <Button variant="cta" className="w-full hover-scale">
                 Send Message
               </Button>
             </CardContent>
@@ -120,7 +120,12 @@ const ContactSection = () => {
               <p className="text-muted-foreground mb-6">
                 Join RAW TRADE and take control of your financial future.
               </p>
-              <Button variant="hero" size="lg">
+              <Button 
+                variant="hero" 
+                size="lg"
+                className="hover-scale"
+                onClick={() => window.open('https://wa.me/919999999999?text=Hello! I want to enroll in RAW TRADE course.', '_blank')}
+              >
                 Enroll Now
               </Button>
               <p className="text-sm text-muted-foreground mt-4">

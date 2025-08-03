@@ -1,5 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
 import { Mail, Phone, Instagram } from "lucide-react";
 
 const ContactSection = () => {
@@ -58,16 +61,73 @@ const ContactSection = () => {
           })}
         </div>
 
-        <div className="bg-card rounded-lg p-8 border border-border">
-          <h3 className="text-2xl font-bold text-card-foreground mb-4">
-            Ready to Start Your Trading Journey?
-          </h3>
-          <p className="text-muted-foreground mb-6">
-            Join RAW TRADE and take control of your financial future.
-          </p>
-          <Button variant="cta" size="lg">
-            Enroll Now
-          </Button>
+        {/* Contact Form */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Contact Form */}
+          <Card className="bg-card border-border">
+            <CardHeader>
+              <CardTitle className="text-2xl text-card-foreground text-center">
+                Send us a Message
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-2">
+                <Label htmlFor="name" className="text-card-foreground">Name</Label>
+                <Input 
+                  id="name" 
+                  placeholder="Your full name" 
+                  className="bg-secondary border-border text-foreground"
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="email" className="text-card-foreground">Email</Label>
+                <Input 
+                  id="email" 
+                  type="email" 
+                  placeholder="your.email@example.com"
+                  className="bg-secondary border-border text-foreground"
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="phone" className="text-card-foreground">Phone (Optional)</Label>
+                <Input 
+                  id="phone" 
+                  type="tel" 
+                  placeholder="+91 XXXXXXXXXX"
+                  className="bg-secondary border-border text-foreground"
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="message" className="text-card-foreground">Message</Label>
+                <Textarea 
+                  id="message" 
+                  placeholder="Ask us anything about the course..."
+                  className="bg-secondary border-border text-foreground min-h-[100px]"
+                />
+              </div>
+              <Button variant="cta" className="w-full">
+                Send Message
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* CTA Card */}
+          <Card className="bg-card border-border flex flex-col justify-center">
+            <CardContent className="p-8 text-center">
+              <h3 className="text-2xl font-bold text-card-foreground mb-4">
+                Ready to Start Your Trading Journey?
+              </h3>
+              <p className="text-muted-foreground mb-6">
+                Join RAW TRADE and take control of your financial future.
+              </p>
+              <Button variant="hero" size="lg">
+                Enroll Now
+              </Button>
+              <p className="text-sm text-muted-foreground mt-4">
+                🔐 Trusted by Hundreds of Traders
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

@@ -49,7 +49,7 @@ const AboutSection = () => {
           <h3 className="text-2xl font-semibold text-foreground mb-8 text-center">
             What You'll Learn
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center max-w-5xl mx-auto">
             {learningModules.map((module, index) => {
               const IconComponent = module.icon;
               return (

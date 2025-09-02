@@ -17,7 +17,16 @@ const Footer = () => {
         
         <div className="text-sm text-muted-foreground">
           <p>&copy; 2025 RAW TRADE. All rights reserved.</p>
-          <p className="mt-2">🔐 Trusted by Hundreds of Traders</p>
+          <div className="flex items-center justify-center gap-4 mt-4">
+            <a 
+              href="/privacy-policy" 
+              className="hover:text-primary transition-colors"
+            >
+              Privacy Policy
+            </a>
+            <span>•</span>
+            <p>🔐 Trusted by Hundreds of Traders</p>
+          </div>
         </div>
       </div>
     </footer>
